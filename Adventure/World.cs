@@ -9,7 +9,7 @@ namespace Adventure
 {
     public class World
     {
-        public List<BaseRoom> rooms = [];
+        public List<BaseRoom> rooms = new List<BaseRoom>();
         public BaseRoom CurrentRoom { get; private set; }
 
         public World() 
@@ -20,7 +20,7 @@ namespace Adventure
             lobby.RegisterNeighbour(corridor);
 
 
-            rooms.AddRange([lobby, corridor]);
+            rooms.AddRange(new BaseRoom[] { lobby, corridor });
 
             CurrentRoom = rooms[0];
         }
