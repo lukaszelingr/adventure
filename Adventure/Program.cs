@@ -34,7 +34,9 @@ namespace Adventure
         {
             { "look", new LookAroundCommand() },
 
-            { "help", new HelpCommand() }
+            { "help", new HelpCommand() },
+
+            { "info", new InfoCommand() }
         };
     }
 }
